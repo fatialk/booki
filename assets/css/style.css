@@ -351,6 +351,9 @@ footer ul{
     list-style-type: none;
     padding:0px;
 }
+footer ul li {
+    margin-bottom: 15px;
+}
 
 .test{
     height: 200px;
