@@ -44,7 +44,7 @@ header{
 main > div, main > section {
     margin-top: 20px;
 }
-.header-menu a{
+a{
     text-decoration: none;
 }
 
