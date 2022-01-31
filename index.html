@@ -13,7 +13,7 @@
 <body>
     <header>
         <div id="logo">
-            <img src="assets/images/logo/Booki.png" alt="Logo de Booki"  width="80"/>
+            <img src="assets/images/logo/Booki@3x.png" alt="Logo de Booki"/>
         </div>
         
         <nav>
@@ -33,20 +33,88 @@
                 <div class="search">
                     <i class="fas fa-map-marker-alt"></i>  
                     <input type="text" name="rechercher" id="rechercher" placeholder="Marseille, France" size="30" maxlength="10" />
-                    <label for="rechercher">Rechercher</label>  
+                    <label for="rechercher"> <span> Rechercher </span><i class="fas fa-search"></i></label>  
                 </div>
             </form>
         </div>
         <div class="filtres">
-            Filtres
-            <span><i class="fas fa-money-bill-wave"></i>Economique</span>
-            <span><i class="fas fa-child"></i>Familial</span>
-            <span><i class="fas fa-heart"></i>Romantique</span>
-            <span><i class="fas fa-dog"></i>Animaux autorisés</span>
+            <span>Filtres</span>
+            <div>
+                <span><i class="fas fa-money-bill-wave"></i>Economique</span>
+                <span><i class="fas fa-child"></i>Familial</span>
+                <span><i class="fas fa-heart"></i>Romantique</span>
+                <span><i class="fas fa-dog"></i>Animaux autorisés</span>
+            </div>
         </div>
-        <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <p>
+            <i class="fas fa-info"></i> 
+            <span>Plus de 500 logements sont disponibles dans cette ville</span>
+        </p>
         
         <div class="sections">
+            <div class="second-section">
+                <!-- 2nd section -->
+                <div class="ss-title">
+                    <h1>Les plus populaires</h1>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="popular">
+                    <a href="#">
+                        <div class="rect-horizontal">
+                            <img class="verticale" src="assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="emile-guillemot-Bj_rcSC5XfE-unsplash">
+                            <div class="rect-horizontal-description">
+                                <div class="lieu-description">
+                                    <span class="lieu">Hôtel le soleil du matin</span></br>
+                                    <span class="description">Nuit à partir de 128€</span></br>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="rect-horizontal">
+                            <img class="verticale" src="assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="aw-creative-VGs8z60yT2c-unsplash">
+                            <div class="rect-horizontal-description">
+                                <div class="lieu-description">
+                                    <span class="lieu"> Au coeur de l'eau Chambre d'hôtes</span></br> 
+                                    <span class="description"> Nuit à partir de 71€</span></br>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="rect-horizontal">
+                            <img class="verticale" src="assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="febrian-zakaria-sjvU0THccQA-unsplash">
+                            <div class="rect-horizontal-description">
+                                <div class="lieu-description">
+                                    <span class="lieu"> Hôtel tout bleu et Blanc</span></br>
+                                    <span class="description"> Nuit à partir de 68€</span></br>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star blue"></i>
+                                    <i class="fas fa-star grey"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div> 
             <div class="first-section">
                 <h1>Hébergements à Marseille</h1>
                 <div class="hebergement"> 
@@ -153,69 +221,7 @@
                 <div class="plus">Afficher plus</div>
                 <!-- 1st section -->
             </div>
-            <div class="second-section">
-                <!-- 2nd section -->
-                <div class="ss-title">
-                    <h1>Les plus populaires</h1>
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="popular">
-                    <a href="#">
-                        <div class="rect-horizontal">
-                            <img class="verticale" src="assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="emile-guillemot-Bj_rcSC5XfE-unsplash">
-                            <div class="rect-horizontal-description">
-                                <div class="lieu-description">
-                                    <span class="lieu">Hôtel le soleil du matin</span></br>
-                                    <span class="description">Nuit à partir de 128€</span></br>
-                                </div>
-                                <div class="stars">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="rect-horizontal">
-                            <img class="verticale" src="assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="aw-creative-VGs8z60yT2c-unsplash">
-                            <div class="rect-horizontal-description">
-                                <div class="lieu-description">
-                                    <span class="lieu"> Au coeur de l'eau Chambre d'hôtes</span></br> 
-                                    <span class="description"> Nuit à partir de 71€</span></br>
-                                </div>
-                                <div class="stars">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star grey"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="rect-horizontal">
-                            <img class="verticale" src="assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="febrian-zakaria-sjvU0THccQA-unsplash">
-                            <div class="rect-horizontal-description">
-                                <div class="lieu-description">
-                                    <span class="lieu"> Hôtel tout bleu et Blanc</span></br>
-                                    <span class="description"> Nuit à partir de 68€</span></br>
-                                </div>
-                                <div class="stars">
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star blue"></i>
-                                    <i class="fas fa-star grey"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div> 
+            
         </div>   
         <div class="activites" id="activites">
             <h1>Activités à Marseille</h1>

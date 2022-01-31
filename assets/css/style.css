@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Raleway";
     src: url("../fonts/raleway/Raleway-VariableFont_wght.ttf") format("truetype"),
-           url("../fonts/raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
-   }
+    url("../fonts/raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+}
 *{
     scroll-behavior: smooth;
 }   
@@ -16,7 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
 }
 
 h1{
@@ -27,14 +27,21 @@ h1{
 .first-section h1{
     margin-left: 30px;
 }
+
 h2{
     color: #8f8f8f;
     font-size: 14px;
 }
 
 #logo{
-    padding: 20px;
+    padding: 20px 0px;
 }
+
+#logo img{
+    
+    width: 80px;
+}
+
 main{
     padding: 0 30px 0 30px;
 }
@@ -76,7 +83,7 @@ ul.header-menu li.active a{
     font-weight: bold;
 }
 
-.search i{
+.search > i{
     border-radius: 10px 0px 0px 10px;
     background: #f2f2f2;
     padding: 12px;
@@ -88,20 +95,27 @@ ul.header-menu li.active a{
     color: white;
     padding: 10px;
     border-radius: 0px 10px 10px 0px;
-
+    
 }
+.search label i{
+    display: none;
+}
+
 
 #rechercher{
     font-weight: bold;
     padding:10px;
-    border: none;
+    border: 1px solid #f2f2f2;
     width: 180px;
 }
 
 .filtres{
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.filtres span{
+.filtres > div > span{
     border-top: 2px solid #dbdbdb;
     border-right: 2px solid #dbdbdb;
     border-bottom: 2px solid #dbdbdb;
@@ -129,14 +143,16 @@ p{
 }
 
 p i{
-    border: solid #dbdbdb 0.5px;
+    border: 0.5px solid #dbdbdb;
     border-radius: 50%;
-    padding: 6px;
+    padding: 6px 10px;
     margin-right: 10px;
     color: #005cfc;
-    font-size: 90%;
-
+    font-size: 12px;
+    height: 100%;
+    
 }
+
 
 header{
     display:flex;
@@ -145,7 +161,7 @@ header{
 .sections{
     display:flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row-reverse;
     height: 580px;
 }
 
@@ -183,12 +199,12 @@ header{
 .fa-star.blue{
     color: #005cfc;
     font-size: 80%;
-
+    
 }
 .fa-star.grey{
     color: #d9d9d9;
     font-size: 80%;
-
+    
 }
 .popular{ 
     height: 500px; ;
@@ -229,7 +245,7 @@ header{
     margin-right: 18px;
     width: 110px;
     height: 120px;
-
+    
 }
 
 .lieu{
@@ -271,8 +287,8 @@ header{
     display:flex;
     justify-content: space-between;
     flex-direction: row;
-
-
+    
+    
 }
 .column2{
     display:flex;
@@ -289,7 +305,7 @@ header{
 .column2-1 img{
     height: 160px;
     width: 297px;
-
+    
 }
 
 .column2-2 img{
@@ -312,7 +328,7 @@ header{
     background: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #ddd;
-
+    
 }
 
 .column2-2{
@@ -320,7 +336,7 @@ header{
     border-radius: 20px;
     box-shadow: 5px 5px 5px #ddd;
     
-
+    
 }
 
 .title{
@@ -361,9 +377,191 @@ footer ul li {
     background: #0065fc;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
+    
     h1 {
-        font-size: 5px;
+        font-size: 22px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:0px;
+    }
+    header #logo{
+        align-self: center;
     }
     
+    #logo img{
+        
+        width: 115px;
+    }
+    
+    ul.header-menu {
+        padding: 0px;
+        width: auto;
+    }
+    
+    ul.header-menu li.active{
+        border-bottom: 2px solid blue;
+        border-top: none;
+    }
+    ul.header-menu li {
+        padding: 20px;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid #d9d9d9;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #rechercher {
+        
+        width: 75%;
+    }
+    
+    .search label {
+        
+        position: absolute;
+        padding: 15px;
+        border-radius: 10px;
+        margin-left: 75%
+    }
+    
+    .search > i {
+        padding: 15px;
+    }
+    
+    main, .sections{
+        padding: 0px;
+    }
+    
+    main > div, main > p, .first-section{
+        padding: 0 30px 0 30px;
+    }
+    
+    .first-section {
+        
+        background: transparent;
+        width: auto;
+    }
+    
+    .rect-vertical{
+        margin: 10px 0;
+        height: 200px;
+    }
+
+    .rect-vertical img {
+        width: auto;
+    }
+    
+    .columns{
+        flex-direction: column;
+        height: auto;
+    }
+    .hebergement{
+        flex-direction: column;
+        height: auto;
+        margin: 0px;
+    }
+    .popular{
+        flex-direction: column;
+        height: auto;
+    }
+    .sections{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .search{
+        margin: 30px 0;
+    }
+    .search label span{
+        display: none;
+    }
+    
+    .search label i{
+        display: block;
+    }
+    
+    .filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filtres > div{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    .filtres > div > span {
+        
+        padding: 0px 20px 0px 0;
+        margin: 10px 10px 10px 0;
+    }
+    
+    main > p{
+        display: flex;
+        flex-direction: row;
+    }
+    main > p > span{
+        font-size: 15px;
+    }
+    
+    .first-section h1{
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    .second-section{
+        width: auto;
+        border-radius: 0px;
+    }
+    
+    .rect-horizontal{
+        margin: 10px 0;
+        height: 135px;
+    }
+
+    .rect-horizontal img {
+        height: 135px;
+    }
+    
+    .rect-horizontal-description {
+        
+        padding: 10px;
+        height: 90%;
+    }
+    
+    .plus {
+        margin-left: 0px; 
+    }
+    
+    .column1, .column2-1, .column2-2{
+        margin: 10px 0;
+    }
+    
+    .column1 img{
+        height: 110px;
+        width: 100%;
+    }
+    
+    .column2-1 img{
+        height: 110px;
+        width: 100%;
+    }
+    
+    .column2-2 img{
+        width: 100%;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+    
+    .fcol {
+        width: 100%;
+    }
 }
