@@ -23,7 +23,9 @@ h1{
     color: black;
     font-size: 16px;
 }
-
+a:visited{
+    color: black;
+}
 .first-section h1{
     margin-left: 30px;
 }
@@ -376,7 +378,6 @@ footer ul li {
     width: 100%;
     background: #0065fc;
 }
-
 @media screen and (max-width:768px) {
     
     h1 {
@@ -450,7 +451,7 @@ footer ul li {
         margin: 10px 0;
         height: 200px;
     }
-
+    
     .rect-vertical img {
         width: auto;
     }
@@ -514,7 +515,7 @@ footer ul li {
         margin-top: 30px;
         margin-left: 0px;
     }
-
+    
     .second-section{
         width: auto;
         border-radius: 0px;
@@ -524,7 +525,7 @@ footer ul li {
         margin: 10px 0;
         height: 135px;
     }
-
+    
     .rect-horizontal img {
         height: 135px;
     }
@@ -563,5 +564,100 @@ footer ul li {
     
     .fcol {
         width: 100%;
+    }
+}
+@media screen and (max-width:992px) and (min-width:768px) {
+    .filtres > div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .filtres div span{
+        padding: 0px 20px 0px 0;
+    }
+    
+    .columns{
+        flex-direction: row;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    
+    .sections{
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    
+    .popular{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin: 30px 0 20px 0;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .first-section{
+        width: auto;
+
+    }
+
+    .hebergement{
+        flex-wrap: wrap;
+    }
+
+    .second-section h1{
+        margin-left: 30px;
+    }
+    
+    
+    .second-section{
+        width: auto;
+        height: auto;
+        padding: 30px 0 30px 0;
+        margin-bottom: 30px;
+
+    }
+    
+    .rect-horizontal{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        background: white;
+        border-radius: 20px;
+        height: 187px;
+    }  
+    
+    .rect-horizontal img {
+        border-radius: 20px 20px 0px 0px;
+        width: 225px;
+        height: 60%;
+    }
+    
+    .rect-horizontal img {
+        margin-right: 0px;
+        
+    }
+
+    .rect-vertical img {
+        width: 225px;
+    }
+    .rect-horizontal-description {
+        height: 40%;
+        margin-left: 10px;
+    }
+
+    .rect-horizontal-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 40%;
+        margin-left: 10px;
+    }
+
+    .columns div{
+        margin-bottom: 20px;
     }
 }
